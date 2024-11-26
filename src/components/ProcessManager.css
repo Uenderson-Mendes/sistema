@@ -1,0 +1,164 @@
+.container {
+    padding: 20px;
+}
+
+.process-list {
+    margin-top: 20px;
+}
+
+.process-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.process-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+}
+
+.process-card.pronto {
+    background-color: #d4edda; /* Verde para pronto */
+}
+
+.process-card.em-espera {
+    background-color: #f8d7da; /* Vermelho para em espera */
+}
+
+.process-card.em-execucao {
+    background-color: #cce5ff; /* Azul para em execução */
+}
+
+.text-success {
+    color: green; /* Verde para "em execução" */
+
+}
+
+  
+
+.status-pronto {
+    color: rgb(255, 255, 255); /* Cor verde para o status 'pronto' */
+    font-weight: bold;
+    background-color: #135304;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.status-em-espera {
+    color: rgb(255, 255, 255); /* Cor vermelha para o status 'em espera' */
+    font-weight: bold;
+    background-color: #7c0c0c;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.status-em-execução {
+  color: rgb(255, 255, 255); /* Cor vermelha para o status 'em espera' */
+  font-weight: bold;
+  background-color: #0c337c;
+  padding: 5px;
+  border-radius: 5px;
+}
+.adjust-time {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .time-icon {
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .time-icon:hover {
+    color: #007bff;
+  }
+  
+  .interval-time {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .card-footer {
+  display: flex;
+  justify-content: flex-end; /* Alinha o botão à direita */
+  padding-top: 10px; /* Espaçamento superior */
+}.process-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    height: 300px; /* Altura fixa para o card */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Garante que o conteúdo interno não force a expansão do card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: box-shadow 0.3s; /* Transição suave ao passar o mouse */
+}
+
+.titulo-status {
+    white-space: nowrap; /* Impede a quebra de linha */
+    overflow: hidden; /* Esconde o texto que ultrapassa o limite */
+    text-overflow: ellipsis; /* Adiciona '...' ao final do texto se ele for muito longo */
+}
+
+.process-card p {
+    margin: 0; /* Remove margens para evitar o crescimento do card */
+    overflow: hidden; /* Esconde o texto que ultrapassa o limite */
+    text-overflow: ellipsis; /* Adiciona '...' ao final do texto se ele for muito longo */
+    max-height: 50px; /* Limita a altura do parágrafo, ajustando conforme necessário */
+}
+.time{
+    background-color: #1e2023;
+    color:#ffffff;
+    padding: 10px;
+    margin-top: -20px;
+}.corpotime{
+    margin-top: -42px;
+    margin-bottom: -185px;
+}.fatia {
+    background-color: #ffffff;
+    border: 2px solid #2f2f2f; /* Adiciona uma borda preta de 2px */
+    border-radius: 5px; /* Opcional: arredonda os cantos */
+    padding: 2px;
+  }.corpo{
+    border: 2px solid #d9d8d8; /* Adiciona uma borda preta de 2px */
+    padding: 10px;
+    border-radius: 10px;
+    
+  }
+  .butt{
+    margin-bottom: -45px;
+    margin-top: -10px;
+  }.dedlocktst{
+    margin-top: -15px;
+    margin-right: -100px;
+    box-shadow: none;
+  }.select-highlight {
+    background-color: #bdcedd; /* Cor de fundo suave para destacar */
+    border: 2px solid #06111d; /* Borda azul para destacar */
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .select-highlight:focus {
+    border-color: #28a745; /* Muda a cor da borda ao focar */
+    box-shadow: 0 0 5px rgba(40, 167, 69, 0.5); /* Adiciona um efeito de sombra */
+  }
+  
+  .select-highlight:hover {
+    border-color: #00b33c; /* Borda muda ao passar o mouse */
+  }
+  .threads{
+    background-color: #d5d3d3d3;
+    color: #000000;
+  }.totalpm{
+    margin-top: -50px;
+    background-color: #d4d4d4;
+    padding: 10px;
+  }
+.titulogerenciadorprocesos{
+  margin-left: -15px;
+}

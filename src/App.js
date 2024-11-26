@@ -1,23 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { ProcessManager } from './components/ProcessManager';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header className="App-header text-center p-3 mb-4 bg-dark text-white">
+        <h1>SimuVOS: Simulador para o Ensino de Sistemas Operacionais</h1>
       </header>
+      <ProcessManager />
     </div>
   );
 }
